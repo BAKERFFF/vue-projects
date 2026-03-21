@@ -9,6 +9,7 @@
         <router-link to="/" class="nav-link" exact-active-class="active">首页</router-link>
         <router-link to="/about" class="nav-link" exact-active-class="active">关于</router-link>
         <router-link to="/news" class="nav-link" exact-active-class="active">新闻</router-link>
+        <router-link to="/projects" class="nav-link" exact-active-class="active">项目</router-link>
         <template v-if="!isLoggedIn">
           <router-link to="/login" class="nav-link" exact-active-class="active">登录</router-link>
         </template>
