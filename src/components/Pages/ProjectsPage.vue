@@ -67,7 +67,7 @@
           <span class="tag">Vue 3</span>
           <span class="tag">CSS</span>
         </div>
-        <a href="#" class="project-link">查看项目 →</a>
+        <router-link to="/calculator" class="project-link">查看项目 →</router-link>
       </div>
     </section>
   </div>

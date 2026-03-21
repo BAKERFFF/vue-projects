@@ -4,6 +4,7 @@ import AboutPage from '../components/Pages/AboutPage.vue'
 import NewsPage from '../components/Pages/NewsPage.vue'
 import LoginPage from '../components/Pages/LoginPage.vue'
 import ProjectsPage from '../components/Pages/ProjectsPage.vue'
+import CalculatorPage from '../components/Pages/CalculatorPage.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/projects',
     name: 'Projects',
     component: ProjectsPage
+  },
+  {
+    path: '/calculator',
+    name: 'Calculator',
+    component: CalculatorPage
   }
 ]
 

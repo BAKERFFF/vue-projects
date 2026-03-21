@@ -2,6 +2,10 @@
   <div class="home-page">
     <header class="hero-section">
       <div class="hero-content">
+        <!-- 添加头像 -->
+        <div class="avatar-container">
+          <img :src="windking" alt="我的头像" class="avatar" />
+        </div>
         <h1>欢迎来到我的个人网站</h1>
         <p>一个新手程序员的学习与成长空间</p>
         <div class="cta-buttons">
@@ -40,8 +44,9 @@
   </div>
 </template>
 
-<script setup>
-// 简单的首页组件
+<script setup lang="ts">
+// 导入头像图片
+import windking from '../../assets/windking.jpg'
 </script>
 
 <style scoped>
@@ -55,6 +60,26 @@
   color: white;
   padding: 60px 20px;
   text-align: center;
+}
+
+/* 头像容器样式 */
+.avatar-container {
+  margin-bottom: 24px;
+}
+
+/* 头像样式 */
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;        /* 圆形 */
+  object-fit: cover;         /* 图片填充 */
+  border: 4px solid white;   /* 白色边框 */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  /* 阴影效果 */
+  transition: transform 0.3s ease;  /* 悬停动画 */
+}
+
+.avatar:hover {
+  transform: scale(1.05);    /* 悬停时放大 */
 }
 
 .hero-content h1 {
@@ -185,6 +210,11 @@
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2rem;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
   }
   
   .features {
