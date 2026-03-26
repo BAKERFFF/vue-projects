@@ -40,7 +40,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/vue-projects/'),
   //history可以支持HTML5的history模式，createWebHistory()函数会根据当前环境自动选择合适的历史记录模式，还可以前进和后退功能
   routes
 })
